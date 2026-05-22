@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Transcriber Pro - локальная транскрибация речи в текст с помощью faster-whisper. Бесплатно, без интернета, полная конфиденциальность.">
+    <title>Transcriber Pro — Локальная транскрибация речи в текст</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-ru">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon">TP</div>
+                    <div class="logo-text">
+                        <h1>Transcriber Pro</h1>
+                        <p class="lang-inline-ru">Локальная транскрибация</p>
+                        <p class="lang-inline-en">Local Transcription</p>
+                    </div>
+                </a>
+                <div class="nav">
+                    <a href="#features" class="lang-inline-ru">Возможности</a>
+                    <a href="#features" class="lang-inline-en">Features</a>
+                    <a href="#howitworks" class="lang-inline-ru">Как работает</a>
+                    <a href="#howitworks" class="lang-inline-en">How it works</a>
+                    <a href="#screenshot" class="lang-inline-ru">Скриншоты</a>
+                    <a href="#screenshot" class="lang-inline-en">Screenshots</a>
+                    <a href="#download" class="btn-outline lang-inline-ru">Скачать</a>
+                    <a href="#download" class="btn-outline lang-inline-en">Download</a>
+                </div>
+                <div class="header-controls">
+                    <a href="/index.html" class="home-btn">
+                        <i class="fas fa-home"></i>
+                        <span class="lang-inline-ru">Главная</span>
+                        <span class="lang-inline-en">Home</span>
+                    </a>
+                    <div class="lang-switch">
+                        <button class="lang-option active" data-lang="ru">Рус</button>
+                        <button class="lang-option" data-lang="en">En</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <span class="hero-badge">
+                            <i class="fas fa-microphone"></i>
+                            <span class="lang-inline-ru">Полностью локально</span>
+                            <span class="lang-inline-en">100% Local</span>
+                        </span>
+                        <h2 class="lang-block-ru">Превращаем речь в текст<br>за считанные минуты</h2>
+                        <h2 class="lang-block-en">Turn speech into text<br>in minutes</h2>
+                        <p class="lang-block-ru">Transcriber Pro — мощное Windows‑приложение для транскрибации встреч, лекций и интервью. Работает без интернета, сохраняет конфиденциальность.</p>
+                        <p class="lang-block-en">Transcriber Pro — a powerful Windows app for transcribing meetings, lectures, and interviews. Works offline, keeps your data private.</p>
+                        <div>
+                            <a href="#download" class="btn-primary" style="margin-right: 12px;">
+                                <i class="fas fa-download"></i>
+                                <span class="lang-inline-ru">Скачать бесплатно</span>
+                                <span class="lang-inline-en">Download Free</span>
+                            </a>
+                            <a href="#howitworks" class="btn-secondary">
+                                <i class="fas fa-play"></i>
+                                <span class="lang-inline-ru">Как работает</span>
+                                <span class="lang-inline-en">How it works</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div>
+                                <div class="stat-number">99%</div>
+                                <div class="stat-label lang-inline-ru">точность*</div>
+                                <div class="stat-label lang-inline-en">accuracy*</div>
+                            </div>
+                            <div>
+                                <div class="stat-number">10x</div>
+                                <div class="stat-label lang-inline-ru">быстрее реального времени</div>
+                                <div class="stat-label lang-inline-en">faster than real-time</div>
+                            </div>
+                            <div>
+                                <div class="stat-number">3</div>
+                                <div class="stat-label lang-inline-ru">формата экспорта</div>
+                                <div class="stat-label lang-inline-en">export formats</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="mockup-header">
+                            <div class="mockup-dot"></div>
+                            <div class="mockup-dot"></div>
+                            <div class="mockup-dot"></div>
+                            <span style="margin-left: 8px; font-size: 13px;">Transcriber Pro v12</span>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-text">
+                                <span class="lang-block-ru">[00:00:05 - 00:00:12] Привет, коллеги, начинаем встречу<br></span>
+                                <span class="lang-block-en">[00:00:05 - 00:00:12] Hello everyone, let's start the meeting<br></span>
+                                <span class="lang-block-ru">[00:00:12 - 00:00:24] Сегодня обсудим план развития продукта<br></span>
+                                <span class="lang-block-en">[00:00:12 - 00:00:24] Today we'll discuss the product roadmap<br></span>
+                                <span class="lang-block-ru">[00:00:24 - 00:00:35] Первая задача — доработать интерфейс<br></span>
+                                <span class="lang-block-en">[00:00:24 - 00:00:35] First task — improve the interface<br></span>
+                                <span style="color: #4f46e5;">▊</span>
+                            </div>
+                            <div style="margin-top: 16px; display: flex; gap: 6px;">
+                                <span style="background: #1a1f2e; color: white; padding: 4px 12px; border-radius: 20px; font-size: 11px;">small</span>
+                                <span style="background: #f3f4f6; padding: 4px 12px; border-radius: 20px; font-size: 11px;">medium</span>
+                                <span style="background: #f3f4f6; padding: 4px 12px; border-radius: 20px; font-size: 11px;">large-v3</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div style="width: 73%; height: 100%; background: linear-gradient(90deg, #1a1f2e, #4a5568); border-radius: 10px;"></div>
+                            </div>
+                            <div style="margin-top: 12px; display: flex; justify-content: space-between; font-size: 11px; color: #6b7280;">
+                                <span>
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span class="lang-inline-ru">скорость x2.4</span>
+                                    <span class="lang-inline-en">speed x2.4</span>
+                                </span>
+                                <span>
+                                    <i class="fas fa-hourglass-half"></i>
+                                    <span class="lang-inline-ru">осталось 1 мин 12 с</span>
+                                    <span class="lang-inline-en">ETA 1 min 12 sec</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOT SECTION - место для скриншота -->
+        <section class="screenshot-section" id="screenshot">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Интерфейс Transcriber Pro</h3>
+                    <h3 class="lang-block-en">Transcriber Pro Interface</h3>
+                    <p class="lang-block-ru">Простой и понятный дизайн для эффективной работы</p>
+                    <p class="lang-block-en">Clean and intuitive design for efficient workflow</p>
+                </div>
+                <div class="screenshot-container">
+                    <img src="/TS.png" alt="Transcriber Pro Screenshot" class="screenshot-img" onerror="this.src='https://placehold.co/1000x600/1a1f2e/ffffff?text=Transcriber+Pro+Screenshot'">
+                    <div class="screenshot-caption">
+                        <span class="lang-inline-ru">Главное окно приложения — загрузка файлов, настройка параметров и просмотр результата</span>
+                        <span class="lang-inline-en">Main application window — file upload, settings configuration, and results preview</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Всё, что нужно для профессиональной транскрибации</h3>
+                    <h3 class="lang-block-en">Everything you need for professional transcription</h3>
+                    <p class="lang-block-ru">Мощные инструменты в простом и понятном интерфейсе</p>
+                    <p class="lang-block-en">Powerful tools in a clean, intuitive interface</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4 class="lang-block-ru">Полная конфиденциальность</h4>
+                        <h4 class="lang-block-en">Complete Privacy</h4>
+                        <p class="lang-block-ru">Всё работает локально на вашем компьютере. Данные не покидают устройство.</p>
+                        <p class="lang-block-en">Everything runs locally on your computer. Your data never leaves your device.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📦</div>
+                        <h4 class="lang-block-ru">Пакетная обработка</h4>
+                        <h4 class="lang-block-en">Batch Processing</h4>
+                        <p class="lang-block-ru">Добавьте несколько файлов — программа обработает их один за другим.</p>
+                        <p class="lang-block-en">Add multiple files — the app processes them one by one.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4 class="lang-block-ru">3 режима качества</h4>
+                        <h4 class="lang-block-en">3 Quality Modes</h4>
+                        <p class="lang-block-ru">Small — для черновиков, Medium — оптимально, Large-v3 — максимальная точность.</p>
+                        <p class="lang-block-en">Small — for drafts, Medium — optimal, Large-v3 — maximum accuracy.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4 class="lang-block-ru">Прогресс и ETA</h4>
+                        <h4 class="lang-block-en">Progress & ETA</h4>
+                        <p class="lang-block-ru">Реальное время обработки, скорость и точное время до окончания.</p>
+                        <p class="lang-block-en">Real-time processing speed and accurate time remaining.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📄</div>
+                        <h4 class="lang-block-ru">Экспорт в 3 форматах</h4>
+                        <h4 class="lang-block-en">3 Export Formats</h4>
+                        <p class="lang-block-ru">TXT с таймкодами, SRT субтитры, JSON для разработчиков.</p>
+                        <p class="lang-block-en">TXT with timestamps, SRT subtitles, JSON for developers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h4 class="lang-block-ru">Portable версия</h4>
+                        <h4 class="lang-block-en">Portable Version</h4>
+                        <p class="lang-block-ru">Работайте с флешки без установки. Всё в одной папке.</p>
+                        <p class="lang-block-en">Run from a USB drive without installation. Everything in one folder.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="howitworks">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Как это работает</h3>
+                    <h3 class="lang-block-en">How It Works</h3>
+                    <p class="lang-block-ru">Три простых шага — и текст готов</p>
+                    <p class="lang-block-en">Three simple steps — and your text is ready</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4 class="lang-block-ru">Загрузите файлы</h4>
+                        <h4 class="lang-block-en">Load Files</h4>
+                        <p class="lang-block-ru">Перетащите WEBM, MP4, WAV или MP3 в окно программы.</p>
+                        <p class="lang-block-en">Drag and drop WEBM, MP4, WAV, or MP3 files.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4 class="lang-block-ru">Настройте и запустите</h4>
+                        <h4 class="lang-block-en">Configure & Run</h4>
+                        <p class="lang-block-ru">Выберите качество, device (CPU/CUDA) и нажмите «Старт».</p>
+                        <p class="lang-block-en">Select quality, device and click "Start".</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4 class="lang-block-ru">Получите расшифровку</h4>
+                        <h4 class="lang-block-en">Get Transcript</h4>
+                        <p class="lang-block-ru">Сохраните TXT, SRT или JSON.</p>
+                        <p class="lang-block-en">Save as TXT, SRT, or JSON.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formats -->
+        <section class="formats">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Форматы экспорта</h3>
+                    <h3 class="lang-block-en">Export Formats</h3>
+                    <p class="lang-block-ru">Выберите подходящий под ваши задачи</p>
+                    <p class="lang-block-en">Choose the format that fits your workflow</p>
+                </div>
+                <div class="format-grid">
+                    <div class="format">
+                        <div style="font-size: 32px;">📄</div>
+                        <h5>TXT</h5>
+                        <p class="lang-block-ru">Текст с таймкодами</p>
+                        <p class="lang-block-en">Text with timestamps</p>
+                    </div>
+                    <div class="format">
+                        <div style="font-size: 32px;">🎬</div>
+                        <h5>SRT</h5>
+                        <p class="lang-block-ru">Субтитры для плееров</p>
+                        <p class="lang-block-en">Subtitles for players</p>
+                    </div>
+                    <div class="format">
+                        <div style="font-size: 32px;">📊</div>
+                        <h5>JSON</h5>
+                        <p class="lang-block-ru">Структурированные данные</p>
+                        <p class="lang-block-en">Structured data</p>
+                    </div>
+                    <div class="format">
+                        <div style="font-size: 32px;">📋</div>
+                        <h5>CSV</h5>
+                        <p class="lang-block-ru">Общий отчёт по всем файлам</p>
+                        <p class="lang-block-en">Master report for all files</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Specs -->
+        <section class="tech-specs">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Технические характеристики</h3>
+                    <h3 class="lang-block-en">Technical Specifications</h3>
+                    <p class="lang-block-ru">Прозрачно и понятно</p>
+                    <p class="lang-block-en">Transparent and clear</p>
+                </div>
+                <div class="specs-card">
+                    <div class="spec-row">
+                        <span class="spec-label">🎙️ <span class="lang-inline-ru">Модели</span><span class="lang-inline-en">Models</span></span>
+                        <span>small, medium, large-v3 (faster-whisper)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">📁 <span class="lang-inline-ru">Форматы</span><span class="lang-inline-en">Formats</span></span>
+                        <span>WEBM, MP4, MKV, WAV, MP3, M4A</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">⚡ <span class="lang-inline-ru">Ускорение</span><span class="lang-inline-en">Acceleration</span></span>
+                        <span>CPU (int8/float32) • CUDA (float16)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">💻 <span class="lang-inline-ru">ОС</span><span class="lang-inline-en">OS</span></span>
+                        <span>Windows 10 / 11 (x64)</span>
+                    </div>
+                    <div class="spec-row" style="border-bottom: none;">
+                        <span class="spec-label">📜 <span class="lang-inline-ru">Лицензия</span><span class="lang-inline-en">License</span></span>
+                        <span class="lang-inline-ru">Freeware • Личное и коммерческое использование</span>
+                        <span class="lang-inline-en">Freeware • Personal and commercial use</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download CTA -->
+        <section class="cta" id="download">
+            <div class="container">
+                <h3 class="lang-block-ru">Готовы попробовать?</h3>
+                <h3 class="lang-block-en">Ready to try it?</h3>
+                <p class="lang-block-ru">Скачайте Transcriber Pro бесплатно. Без регистрации, без ограничений.</p>
+                <p class="lang-block-en">Download Transcriber Pro for free. No registration, no limits.</p>
+                <a href="https://drive.google.com/drive/folders/10aQwWGmo-G4J45qgRzFYsLqQZUYsTi0F?usp=sharing" class="btn-primary">
+                    <i class="fas fa-download"></i>
+                    <span class="lang-inline-ru">Скачать Transcriber Pro (Windows)</span>
+                    <span class="lang-inline-en">Download Transcriber Pro (Windows)</span>
+                </a>
+                <div class="cta-small" style="margin-top: 24px; opacity: 0.7;">
+                    <span class="lang-block-ru">Версия v12 • Portable ~5.0 ГБ (включая все модели) • Доступен исходный код</span>
+                    <span class="lang-block-en">Version v12 • Portable ~5.0 GB (includes all models) • Source code available</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+
+        // Language switching
+        const langButtons = document.querySelectorAll('.lang-option');
+        
+        function setLanguage(lang) {
+            langButtons.forEach(btn => {
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            if (lang === 'en') {
+                document.body.classList.remove('lang-ru');
+                document.body.classList.add('lang-en');
+                localStorage.setItem('transcriber-lang', 'en');
+                document.documentElement.lang = 'en';
+            } else {
+                document.body.classList.remove('lang-en');
+                document.body.classList.add('lang-ru');
+                localStorage.setItem('transcriber-lang', 'ru');
+                document.documentElement.lang = 'ru';
+            }
+        }
+        
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const lang = btn.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+        
+        const savedLang = localStorage.getItem('transcriber-lang');
+        if (savedLang === 'en') {
+            setLanguage('en');
+        } else if (savedLang === 'ru') {
+            setLanguage('ru');
+        } else {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang && browserLang.startsWith('en')) {
+                setLanguage('en');
+            } else {
+                setLanguage('ru');
+            }
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

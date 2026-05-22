@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Link Checker Pro - мощное приложение для массовой проверки ссылок, изображений и видео из CSV/Excel файлов">
+    <title>Link Checker Pro — Массовая проверка ссылок из CSV и Excel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-ru">
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="/index.html" class="logo">
+                    <div class="logo-icon">LC</div>
+                    <div class="logo-text">
+                        <h1>Link Checker Pro</h1>
+                        <p class="lang-inline-ru">Массовая проверка ссылок</p>
+                        <p class="lang-inline-en">Bulk Link Validation</p>
+                    </div>
+                </a>
+                <div class="nav">
+                    <a href="#features" class="lang-inline-ru">Возможности</a>
+                    <a href="#features" class="lang-inline-en">Features</a>
+                    <a href="#howitworks" class="lang-inline-ru">Как работает</a>
+                    <a href="#howitworks" class="lang-inline-en">How it works</a>
+                    <a href="#screenshot" class="lang-inline-ru">Скриншоты</a>
+                    <a href="#screenshot" class="lang-inline-en">Screenshots</a>
+                    <a href="#download" class="btn-outline lang-inline-ru">Скачать</a>
+                    <a href="#download" class="btn-outline lang-inline-en">Download</a>
+                </div>
+                <div class="header-controls">
+                    <a href="/index.html" class="home-btn">
+                        <i class="fas fa-home"></i>
+                        <span class="lang-inline-ru">Главная</span>
+                        <span class="lang-inline-en">Home</span>
+                    </a>
+                    <div class="lang-switch">
+                        <button class="lang-option active" data-lang="ru">Рус</button>
+                        <button class="lang-option" data-lang="en">En</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <span class="hero-badge">
+                            <i class="fas fa-bolt"></i>
+                            <span class="lang-inline-ru">Массовая проверка</span>
+                            <span class="lang-inline-en">Bulk Checking</span>
+                        </span>
+                        <h2 class="lang-block-ru">Проверьте тысячи ссылок<br>за считанные минуты</h2>
+                        <h2 class="lang-block-en">Check thousands of links<br>in just minutes</h2>
+                        <p class="lang-block-ru">Link Checker Pro — мощное Windows-приложение для валидации ссылок из CSV и Excel. Проверяет HTTP статусы, целостность изображений и видео.</p>
+                        <p class="lang-block-en">Link Checker Pro — a powerful Windows app for validating links from CSV and Excel files. Checks HTTP status, image integrity, and video validation.</p>
+                        <div>
+                            <a href="#download" class="btn-primary" style="margin-right: 12px;">
+                                <i class="fas fa-download"></i>
+                                <span class="lang-inline-ru">Скачать бесплатно</span>
+                                <span class="lang-inline-en">Download Free</span>
+                            </a>
+                            <a href="#howitworks" class="btn-secondary">
+                                <i class="fas fa-play"></i>
+                                <span class="lang-inline-ru">Как работает</span>
+                                <span class="lang-inline-en">How it works</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div>
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label lang-inline-ru">потоков параллельно</div>
+                                <div class="stat-label lang-inline-en">parallel threads</div>
+                            </div>
+                            <div>
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label lang-inline-ru">формата файлов</div>
+                                <div class="stat-label lang-inline-en">file formats</div>
+                            </div>
+                            <div>
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label lang-inline-ru">локально</div>
+                                <div class="stat-label lang-inline-en">offline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="mockup-header">
+                            <div class="mockup-dot"></div>
+                            <div class="mockup-dot"></div>
+                            <div class="mockup-dot"></div>
+                            <span style="margin-left: 8px; font-size: 13px;">Link Checker Pro v1.0</span>
+                        </div>
+                        <div class="mockup-body">
+                            <table class="mockup-table">
+                                <thead>
+                                    <tr>
+                                        <th>URL</th>
+                                        <th>HTTP</th>
+                                        <th>Тип</th>
+                                        <th>Статус</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>example.com/image.jpg</td>
+                                        <td class="status-ok">200</td>
+                                        <td>image</td>
+                                        <td class="status-ok">✓ OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>example.com/video.mp4</td>
+                                        <td class="status-ok">200</td>
+                                        <td>video</td>
+                                        <td class="status-ok">✓ OK</td>
+                                    </tr>
+                                    <tr>
+                                        <td>example.com/broken.pdf</td>
+                                        <td class="status-bad">404</td>
+                                        <td>doc</td>
+                                        <td class="status-bad">✗ Broken</td>
+                                    </tr>
+                                    <tr>
+                                        <td>example.com/page.html</td>
+                                        <td class="status-ok">200</td>
+                                        <td>page</td>
+                                        <td class="status-ok">✓ OK</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div style="margin-top: 12px; display: flex; justify-content: space-between; font-size: 11px; color: #6b7280;">
+                                <span>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="lang-inline-ru">Проверено: 126 из 189</span>
+                                    <span class="lang-inline-en">Checked: 126 of 189</span>
+                                </span>
+                                <span>
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span class="lang-inline-ru">~15 ссылок/сек</span>
+                                    <span class="lang-inline-en">~15 links/sec</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOT SECTION - место для скриншота -->
+        <section class="screenshot-section" id="screenshot">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Интерфейс Link Checker Pro</h3>
+                    <h3 class="lang-block-en">Link Checker Pro Interface</h3>
+                    <p class="lang-block-ru">Удобная таблица результатов и детальная статистика</p>
+                    <p class="lang-block-en">Convenient results table and detailed statistics</p>
+                </div>
+                <div class="screenshot-container">
+                    <img src="/LinkChecker_img.png" alt="Link Checker Pro Screenshot" class="screenshot-img" onerror="this.src='https://placehold.co/1000x600/1a1f2e/ffffff?text=Link+Checker+Pro+Screenshot'">
+                    <div class="screenshot-caption">
+                        <span class="lang-inline-ru">Главное окно приложения — загрузка файла, настройка параметров и результаты проверки</span>
+                        <span class="lang-inline-en">Main application window — file upload, settings configuration, and validation results</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Всё, что нужно для профессиональной валидации</h3>
+                    <h3 class="lang-block-en">Everything you need for professional validation</h3>
+                    <p class="lang-block-ru">Мощные инструменты в простом интерфейсе</p>
+                    <p class="lang-block-en">Powerful tools in a simple interface</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4 class="lang-block-ru">CSV / Excel поддержка</h4>
+                        <h4 class="lang-block-en">CSV / Excel Support</h4>
+                        <p class="lang-block-ru">Загружайте CSV, XLSX, XLS. Автоопределение кодировки.</p>
+                        <p class="lang-block-en">Load CSV, XLSX, XLS. Auto-detects encoding.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🖼️</div>
+                        <h4 class="lang-block-ru">Проверка изображений</h4>
+                        <h4 class="lang-block-en">Image Validation</h4>
+                        <p class="lang-block-ru">Глубокая проверка целостности изображений через Pillow.</p>
+                        <p class="lang-block-en">Deep image integrity checking with Pillow.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎬</div>
+                        <h4 class="lang-block-ru">Проверка видео</h4>
+                        <h4 class="lang-block-en">Video Validation</h4>
+                        <p class="lang-block-ru">Анализ сигнатур MP4, WebM, AVI.</p>
+                        <p class="lang-block-en">Signature analysis for MP4, WebM, AVI.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4 class="lang-block-ru">Многопоточность</h4>
+                        <h4 class="lang-block-en">Multi-threading</h4>
+                        <p class="lang-block-ru">До 50 потоков для максимальной скорости.</p>
+                        <p class="lang-block-en">Up to 50 threads for max speed.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h4 class="lang-block-ru">Детальный отчёт</h4>
+                        <h4 class="lang-block-en">Detailed Report</h4>
+                        <p class="lang-block-ru">Экспорт в Excel со всей информацией.</p>
+                        <p class="lang-block-en">Export to Excel with full details.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4 class="lang-block-ru">Follow Redirects</h4>
+                        <h4 class="lang-block-en">Follow Redirects</h4>
+                        <p class="lang-block-ru">Автоследование по редиректам.</p>
+                        <p class="lang-block-en">Automatic redirect following.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works" id="howitworks">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Как это работает</h3>
+                    <h3 class="lang-block-en">How It Works</h3>
+                    <p class="lang-block-ru">Три простых шага — и отчёт готов</p>
+                    <p class="lang-block-en">Three simple steps — and your report is ready</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4 class="lang-block-ru">Загрузите файл</h4>
+                        <h4 class="lang-block-en">Load File</h4>
+                        <p class="lang-block-ru">Выберите CSV или Excel файл со ссылками.</p>
+                        <p class="lang-block-en">Select CSV or Excel file with links.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4 class="lang-block-ru">Настройте параметры</h4>
+                        <h4 class="lang-block-en">Configure Settings</h4>
+                        <p class="lang-block-ru">Укажите столбец, таймаут и потоки.</p>
+                        <p class="lang-block-en">Set column, timeout, and threads.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4 class="lang-block-ru">Получите результат</h4>
+                        <h4 class="lang-block-en">Get Results</h4>
+                        <p class="lang-block-ru">Сохраните отчёт в Excel.</p>
+                        <p class="lang-block-en">Save detailed Excel report.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Specs -->
+        <section class="tech-specs">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="lang-block-ru">Технические характеристики</h3>
+                    <h3 class="lang-block-en">Technical Specifications</h3>
+                    <p class="lang-block-ru">Прозрачно и понятно</p>
+                    <p class="lang-block-en">Transparent and clear</p>
+                </div>
+                <div class="specs-card">
+                    <div class="spec-row">
+                        <span class="spec-label">📄 <span class="lang-inline-ru">Форматы</span><span class="lang-inline-en">Formats</span></span>
+                        <span>CSV, XLSX, XLS</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">🔍 <span class="lang-inline-ru">Проверка</span><span class="lang-inline-en">Validation</span></span>
+                        <span class="lang-inline-ru">HTTP статус, изображения, видео</span>
+                        <span class="lang-inline-en">HTTP status, images, video</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">⚡ <span class="lang-inline-ru">Потоки</span><span class="lang-inline-en">Threads</span></span>
+                        <span class="lang-inline-ru">До 50 (настраивается)</span>
+                        <span class="lang-inline-en">Up to 50 (configurable)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">⏱️ <span class="lang-inline-ru">Таймаут</span><span class="lang-inline-en">Timeout</span></span>
+                        <span class="lang-inline-ru">8 секунд (настраивается)</span>
+                        <span class="lang-inline-en">8 seconds (configurable)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">💻 <span class="lang-inline-ru">ОС</span><span class="lang-inline-en">OS</span></span>
+                        <span>Windows 10 / 11 (x64)</span>
+                    </div>
+                    <div class="spec-row" style="border-bottom: none;">
+                        <span class="spec-label">📜 <span class="lang-inline-ru">Лицензия</span><span class="lang-inline-en">License</span></span>
+                        <span class="lang-inline-ru">Freeware • Личное и коммерческое использование</span>
+                        <span class="lang-inline-en">Freeware • Personal and commercial use</span>
+                    </div>
+                </div>
+            </div>
+</section>
+
+        <!-- Download CTA -->
+        <section class="cta" id="download">
+            <div class="container">
+                <h3 class="lang-block-ru">Готовы проверить свои ссылки?</h3>
+                <h3 class="lang-block-en">Ready to check your links?</h3>
+                <p class="lang-block-ru">Скачайте Link Checker Pro бесплатно. Без регистрации, без ограничений.</p>
+                <p class="lang-block-en">Download Link Checker Pro for free. No registration, no limits.</p>
+                <a href="https://drive.google.com/drive/folders/1a7QPQ5K2TwOi2C-PMIaRNYYpz_nkiU_v?usp=sharing" class="btn-primary">
+                    <i class="fas fa-download"></i>
+                    <span class="lang-inline-ru">Скачать Link Checker Pro (Windows)</span>
+                    <span class="lang-inline-en">Download Link Checker Pro (Windows)</span>
+                </a>
+                <div class="cta-small" style="margin-top: 24px; opacity: 0.7;">
+                    <span class="lang-block-ru">Версия 1.0 • ~80 МБ • PySide6 + pandas + requests</span>
+                    <span class="lang-block-en">Version 1.0 • ~80 MB • Powered by PySide6 + pandas + requests</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+
+        // Language switching
+        const langButtons = document.querySelectorAll('.lang-option');
+        
+        function setLanguage(lang) {
+            langButtons.forEach(btn => {
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            if (lang === 'en') {
+                document.body.classList.remove('lang-ru');
+                document.body.classList.add('lang-en');
+                localStorage.setItem('linkchecker-lang', 'en');
+                document.documentElement.lang = 'en';
+            } else {
+                document.body.classList.remove('lang-en');
+                document.body.classList.add('lang-ru');
+                localStorage.setItem('linkchecker-lang', 'ru');
+                document.documentElement.lang = 'ru';
+            }
+        }
+        
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const lang = btn.getAttribute('data-lang');
+                setLanguage(lang);
+            });
+        });
+        
+        const savedLang = localStorage.getItem('linkchecker-lang');
+        if (savedLang === 'en') {
+            setLanguage('en');
+        } else if (savedLang === 'ru') {
+            setLanguage('ru');
+        } else {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang && browserLang.startsWith('en')) {
+                setLanguage('en');
+            } else {
+                setLanguage('ru');
+            }
+        }
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
