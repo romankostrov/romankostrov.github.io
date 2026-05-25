@@ -417,7 +417,6 @@ body.lang-en .lang-block-en { display: block !important; }
     margin: 0 auto;
     border-radius: 32px;
     background: #ffffff;
-    /* Более контрастная тень */
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     transition: all 0.3s ease;
@@ -425,7 +424,6 @@ body.lang-en .lang-block-en { display: block !important; }
 
 .screenshot-container:hover {
     transform: scale(1.01);
-    /* Ещё более контрастная тень при наведении */
     box-shadow: 0 35px 65px -12px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
